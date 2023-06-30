@@ -8,9 +8,9 @@ O unico pré requisito é ter o Git Cmd ou Git Bash instalado.
 
 🛠️ Construído com
 Código feito inteiramente em
- HTML 
- CSS  
- JS
+HTML 
+CSS  
+JS
 
 📌 Versão
 BETA 1.2
