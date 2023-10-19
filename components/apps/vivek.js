@@ -75,7 +75,7 @@ export class AboutVivek extends Component {
                     <span className=" ml-1 md:ml-2 text-gray-50 ">Resume</span>
                 </div>
                 <div className='my-0.5 w-28 md:w-full h-8 px-2 md:px-2.5 flex' >
-                    <iframe src="https://github.com/sponsors/vivek9patel/button" title="Sponsor vivek9patel" width={"100%"} height={"100%"} ></iframe>
+                    <iframe src="https://github.com/sponsors/andrelks/button" title="Sponsor andrelks" width={"100%"} height={"100%"} ></iframe>
                 </div>
             </>
         );
@@ -236,7 +236,7 @@ function Projects() {
         {
             name: "UbuntuOS Portfolio",
             date: "Apr 2021",
-            link: "https://github.com/vivek9patel/vivek9patel.github.io",
+            link: "https://github.com/andrelks/andrelks.github.io",
             description: [
                 "Personal portfolio website of theme Ubuntu 20.04, made using NEXT.js & tailwind CSS",
             ],
@@ -245,7 +245,7 @@ function Projects() {
         {
             name: "Chrome Extension React Bolierplate",
             date: "Dec 2021",
-            link: "https://github.com/vivek9patel/chrome-extension-react-boilerplate",
+            link: "https://github.com/andrelks/chrome-extension-react-boilerplate",
             description: [
                 "A boilerplate code to build a chrome extension with react and webpack",
             ],
@@ -254,7 +254,7 @@ function Projects() {
         {
             name: "CodeConnect",
             date: "Nov 2021",
-            link: "https://github.com/vivek9patel/CodeConnect-frontend",
+            link: "https://github.com/andrelks/CodeConnect-frontend",
             description: [
                 "A multi-language pair-programming platform with the features of video meeting and whiteboard. Built with React.js, Tailwind CSS, Chakra UI, Express & Socket.io.",
             ],
@@ -263,7 +263,7 @@ function Projects() {
         {
             name: "Ad Free Spotify",
             date: "Jun 2021",
-            link: "https://github.com/vivek9patel/ad-free-spotify",
+            link: "https://github.com/andrelks/ad-free-spotify",
             description: [
                 "Chrome extension to automatically mute/unmute Spotify tab when Advertisement starts and ends!",
             ],
@@ -272,7 +272,7 @@ function Projects() {
         {
             name: "economist.com Unlocked",
             date: "Mar 2021",
-            link: "https://github.com/vivek9patel/economist.com-unlocked",
+            link: "https://github.com/andrelks/economist.com-unlocked",
             description: [
                 "A chrome extension to read Paid Articles for Free & with no Ads, no subscription, no memberships!",
             ],
@@ -281,7 +281,7 @@ function Projects() {
         {
             name: "Flutter banking app",
             date: "Jan 2021",
-            link: "https://github.com/vivek9patel/flutter-banking-app",
+            link: "https://github.com/andrelks/flutter-banking-app",
             description: [
                 "A Flutter & Firebase project for creating transactions between different Users and displaying the history of transactions done by all.",
             ],
@@ -290,7 +290,7 @@ function Projects() {
         {
             name: "CPU scheduling application",
             date: "Dec 2020",
-            link: "https://github.com/vivek9patel/CPU-Scheduling-APP-React-Native",
+            link: "https://github.com/andrelks/CPU-Scheduling-APP-React-Native",
             description: [
                 "React Native Application to visualize the CPU Scheduling algorithms with different Processes and Animations with gannt chart.",
             ],
@@ -299,7 +299,7 @@ function Projects() {
         {
             name: "Meditech Healthcare WebApp",
             date: "Nov 2020",
-            link: "https://github.com/vivek9patel/Meditech-Healthcare",
+            link: "https://github.com/andrelks/Meditech-Healthcare",
             description: [
                 "Developed Web Application to predict and diagnose diseases from x-ray images.",
             ],
@@ -308,7 +308,7 @@ function Projects() {
         {
             name: "Problem Recommendation System",
             date: "Sep 2020",
-            link: "https://github.com/vivek9patel/Improve-Codeforces",
+            link: "https://github.com/andrelks/Improve-Codeforces",
             description: [
                 "Django web application to suggest practice problems from the areas in which the user struggles to get pass in code-forces.",
             ],
@@ -317,7 +317,7 @@ function Projects() {
         {
             name: "Cleanliness Automation",
             date: "Dec 2019",
-            link: "https://github.com/vivek9patel/CPU-Scheduling-APP-React-Native",
+            link: "https://github.com/andrelks/CPU-Scheduling-APP-React-Native",
             description: [
                 "Developed Web Applications to automate Garbage collection and extraction systems for SSIP hackathon",
             ],
@@ -352,7 +352,7 @@ function Projects() {
                     <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
                 </div>
             </div>
-            <iframe src="https://github.com/sponsors/vivek9patel/card" title="Sponsor vivek9patel" className='my-4 w-5/6 md:w-3/4' ></iframe>
+            <iframe src="https://github.com/sponsors/andrelks/card" title="Sponsor andrelks" className='my-4 w-5/6 md:w-3/4' ></iframe>
 
             {
                 project_list.map((project, index) => {
@@ -364,7 +364,7 @@ function Projects() {
                                 <div className="flex flex-wrap justify-between items-center">
                                     <div className='flex justify-center items-center'>
                                         <div className=" text-base md:text-lg mr-2">{project.name.toLowerCase()}</div>
-                                        <iframe src={`https://ghbtns.com/github-btn.html?user=vivek9patel&repo=${projectName}&type=star&count=true`} frameBorder="0" scrolling="0" width="150" height="20" title={project.name.toLowerCase()+"-star"}></iframe>
+                                        <iframe src={`https://ghbtns.com/github-btn.html?user=andrelks&repo=${projectName}&type=star&count=true`} frameBorder="0" scrolling="0" width="150" height="20" title={project.name.toLowerCase()+"-star"}></iframe>
                                     </div>
                                     <div className="text-gray-300 font-light text-sm">{project.date}</div>
                                 </div>
