@@ -8,8 +8,6 @@ type `npm start` and when u are done coding type `npm run build` to build your a
 
 _NOTE: if you have yarn just replace `npm start` and `npm run build` with `yarn start` and `yarn build`._
 
-<a href="https://www.buymeacoffee.com/andrelks" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
-
 ### To make the contact form work
 
 - Create a account in [emailjs](https://www.emailjs.com/) create also new Outlook or Gmail account to be able
@@ -20,9 +18,9 @@ _NOTE: if you have yarn just replace `npm start` and `npm run build` with `yarn 
 
 ```
 
-NEXT_PUBLIC_USER_ID = 'YOUR_USER_ID'
-NEXT_PUBLIC_TEMPLATE_ID = 'template_fqqqb9g'
-NEXT_PUBLIC_SERVICE_ID = 'YOUR_SERVICE_ID'
+NEXT_PUBLIC_USER_ID = '5YXoMNADddH2IyPDv'
+NEXT_PUBLIC_TEMPLATE_ID = 'template_egcqyg8'
+NEXT_PUBLIC_SERVICE_ID = 'service_kap6kpi'
 
 ```
 
@@ -47,13 +45,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributiors who wants to make this website better can make contribution,which will be **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Added some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
