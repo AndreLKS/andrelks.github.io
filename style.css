@@ -488,267 +488,256 @@ header {
     .title { font-size: 2.8rem; }
     .ongs-list { flex-wrap: wrap; gap: 35px; }
 }
-
 /* ===== RESPONSIVIDADE MOBILE ===== */
 
-/* Tablets e telas menores que 1024px */
-@media (max-width: 1024px) {
-    .navbar {
-        padding: 0 30px;
-    }
-    
-    .nav-menu {
-        gap: 25px;
-        font-size: 0.95rem;
-    }
-    
-    .girl-container {
-        width: 450px;
-        height: 450px;
-    }
-    
-    .girl-img {
-        width: 400px;
-    }
-    
-    .title-img {
-        max-width: 500px;
-    }
-    
-    .info-wrapper {
-        flex-direction: column;
-        margin-top: -80px;
-    }
-    
-    .cat-img {
-        width: 250px;
-        margin-bottom: 20px;
-    }
-    
-    .green-box {
-        margin-left: 0;
-        border-radius: 32px;
-        padding: 35px 40px;
-    }
-}
-
-/* Mobile - telas menores que 768px */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
     }
     
-    /* Header */
+    /* Header - Menu hamburger seria ideal, mas simplificando: */
+    header {
+        padding: 10px 0;
+    }
+    
     .navbar {
         flex-direction: column;
-        padding: 15px 20px;
-        gap: 15px;
+        padding: 10px 15px;
+        gap: 10px;
     }
     
     .logo img {
-        height: 40px;
+        height: 35px;
     }
     
     .nav-menu {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
-        font-size: 0.85rem;
+        gap: 12px;
+        font-size: 0.75rem;
     }
     
     /* Hero Section */
     .hero-section {
         height: auto;
-        min-height: 60vh;
-    }
-    
-    .hero-full-img {
-        height: auto;
+        min-height: 50vh;
     }
     
     .hero-text-overlay {
-        bottom: 10%;
+        bottom: 8%;
         width: 90%;
+        padding: 0 10px;
     }
     
     .hero-text-overlay p {
-        font-size: 0.85rem;
-        line-height: 1.5;
+        font-size: 0.7rem;
+        line-height: 1.4;
     }
     
     /* Seção Adoção */
     .adoption-section {
-        padding: 40px 0 0;
+        padding: 30px 0 0;
     }
     
-    .title-img {
-        max-width: 90%;
-    }
-    
-    .girl-container {
-        width: 280px;
-        height: 300px;
+    .title-img-wrapper {
         margin-bottom: 30px;
     }
     
-    .girl-img {
-        width: 260px;
-    }
-    
-    .dec {
-        width: 35px;
+    .title-img {
+        max-width: 85%;
     }
     
     .adoption-wrapper {
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
     
+    /* Menina - Redimensionar */
+    .girl-container {
+        width: 250px;
+        height: 280px;
+        margin: 0 auto 30px;
+    }
+    
+    .girl-img {
+        width: 230px;
+    }
+    
+    .dec {
+        width: 30px;
+    }
+    
+    /* Caixa laranja - Ajustar posição e tamanho */
     .orange-background-box {
-        top: 250px;
-        height: 550px;
-        border-radius: 0 0 40% 40%;
+        top: 330px;
+        height: auto;
+        min-height: 450px;
+        border-radius: 0 0 35% 35%;
     }
     
+    /* Texto dentro da caixa */
     .adoption-text-box {
-        padding: 0 25px;
+        padding: 20px 20px 40px;
     }
     
     .adoption-text-box p {
-        font-size: 0.9rem;
-        line-height: 1.6;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
     }
     
     /* Seção ONGs */
     .partners-section {
-        padding: 0 20px;
-        margin-top: -200px;
+        padding: 0 15px;
+        margin-top: -180px;
+    }
+    
+    .partners-section .title-img-wrapper {
+        margin-bottom: 15px;
     }
     
     .carousel {
-        gap: 20px;
+        gap: 15px;
         margin-top: 15px;
+        margin-bottom: 50px;
     }
     
     .arrow {
-        padding: 5px;
+        padding: 8px;
     }
     
     .arrow svg {
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
     }
     
     .ongs-container {
-        width: 250px;
+        width: 200px;
+        padding-bottom: 40px;
+    }
+    
+    .ongs-list {
+        gap: 20px;
     }
     
     .ong-item {
-        width: 100px;
-        height: 100px;
-        padding: 15px;
+        width: 85px;
+        height: 85px;
+        padding: 12px;
     }
     
     .ong-item.center {
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
     }
     
-    .ong-item img {
-        max-width: 85%;
+    .ong-name {
+        bottom: -30px;
+        font-size: 0.7rem;
     }
     
-    /* Atualizar cálculo do carrossel para mobile */
-    .ongs-list {
-        gap: 25px;
-        padding-bottom: 50px;
-    }
-    
-    /* Info wrapper */
+    /* Gato + Caixa Verde */
     .info-wrapper {
-        margin-top: -60px;
+        margin-top: -50px;
         padding-bottom: 30px;
+        flex-direction: column;
+        align-items: center;
     }
     
     .cat-img {
-        width: 200px;
+        width: 180px;
+        margin-bottom: 15px;
     }
     
     .green-box {
-        padding: 30px 25px;
-        min-height: auto;
+        width: 90%;
+        margin-left: 0;
+        border-radius: 25px;
+        padding: 25px 20px;
     }
     
     .green-box p {
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 0.85rem;
+        line-height: 1.5;
     }
     
-    /* Contato */
+    /* Ondas */
+    .wave-ongs-divider {
+        height: 60px;
+    }
+    
+    .wave-ongs-divider svg {
+        height: 60px;
+    }
+    
+    /* Contato/Footer */
     .contact-section {
-        padding: 35px 20px;
+        padding: 30px 15px;
     }
     
     .contact-wrapper {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
         text-align: center;
     }
     
     .contact-left h3,
     .contact-right h3 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
     }
     
-    .contact-left p,
+    .contact-left p {
+        font-size: 0.9rem;
+    }
+    
     .contact-right a {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-right img {
+        width: 26px;
     }
 }
 
-/* Mobile pequeno - telas menores que 480px */
-@media (max-width: 480px) {
-    .nav-menu {
-        font-size: 0.75rem;
-        gap: 10px;
-    }
-    
+/* Mobile MUITO pequeno */
+@media (max-width: 400px) {
     .hero-text-overlay p {
-        font-size: 0.75rem;
-    }
-    
-    .title-img {
-        max-width: 95%;
+        font-size: 0.65rem;
     }
     
     .girl-container {
-        width: 220px;
-        height: 250px;
+        width: 200px;
+        height: 230px;
     }
     
     .girl-img {
-        width: 200px;
-    }
-    
-    .orange-background-box {
-        top: 200px;
-        height: 500px;
-    }
-    
-    .ongs-container {
         width: 180px;
     }
     
+    .orange-background-box {
+        top: 280px;
+        min-height: 400px;
+    }
+    
+    .adoption-text-box p {
+        font-size: 0.75rem;
+    }
+    
+    .ongs-container {
+        width: 160px;
+    }
+    
     .ong-item {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
     
     .ong-item.center {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
     
     .cat-img {
-        width: 150px;
+        width: 140px;
     }
 }
