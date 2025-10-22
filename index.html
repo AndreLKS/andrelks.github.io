@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Pertencer - Adoção Responsável</title>
+    <link rel="icon" type="image/png" href="imagens/vetores/icone_laranja_cachorro.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#sobre">
+                    <img src="imagens/logo/Logo_Pertencer_verde.png" alt="Projeto Pertencer">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#adocao">Adoção responsável</a></li>
+                <li><a href="#ongs">ONGs e Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section id="sobre" class="hero-section">
+    <img src="imagens/vetores/tela-inicial-completa.png" alt="Projeto Pertencer" class="hero-full-img">
+    <div class="hero-text-overlay">
+        <p>O <span class="green-text">Projeto Pertencer</span> nasceu para dar voz à causa animal e servir de caminho que aproxima pessoas, patas e corações. Nossa missão é incentivar a adoção responsável e valorizar o trabalho das ONGs e Projetos que lutam todos os dias por uma vida mais digna para tantos animais.</p>
+    </div>
+</section>
+    <section id="adocao" class="adoption-section">
+        <div class="title-img-wrapper">
+            <img src="imagens/vetores/texto_adocao.png" alt="Adoção Responsável" class="title-img">
+        </div>
+        
+        <div class="adoption-wrapper">
+            <div class="orange-background-box"></div>
+            
+            <div class="girl-container">
+                <img src="imagens/imagens/modelo_bichinhos.png" alt="Menina" class="girl-img">
+                <img src="imagens/vetores/brilho_laranja.png" class="dec d1">
+                <img src="imagens/vetores/brilho_laranja.png" class="dec d2">
+            </div>
+            
+            <div class="adoption-text-box">
+                <p>Adotar um animal é muito mais do que oferecer um lar: <strong>é assumir um compromisso de amor, cuidado e respeito.</strong> Cada bichinho adotado carrega uma história de espera e esperança, e quando encontra uma família disposta a cuidar com dedicação, ganha uma segunda chance de vida.</p>
+                <p><strong>A adoção responsável</strong> significa entender que um pet precisa de atenção, alimentação, cuidados veterinários e, acima de tudo, carinho todos os dias. É sobre reconhecer que eles não são objetos, mas vidas que sentem, amam e confiam em nós.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ongs" class="partners-section">
+        <div class="title-img-wrapper">
+            <img src="imagens/vetores/texto_ongs.png" alt="ONGs e Projetos parceiros" class="title-img">
+        </div>
+        
+        <div class="carousel">
+            <button class="arrow left" onclick="prevSlide()">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M25 10L15 20L25 30" stroke="#B8D961" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <div class="ongs-container">
+                <div class="ongs-list">
+                    <div class="ong-item">
+                        <img src="imagens/icones_ongs/icone_ong_adote_um_meow.png" alt="Adote um Meow">
+                    </div>
+                    <div class="ong-item">
+                        <img src="imagens/icones_ongs/icone_ong_fiel_companheiro.png" alt="Fiel Companheiro">
+                    </div>
+                    <div class="ong-item center">
+                        <img src="imagens/icones_ongs/icone_ong_faunamiga.png" alt="Faunamiga">
+                    </div>
+                    <div class="ong-item">
+                        <img src="imagens/icones_ongs/icone_ong_arca_animal.png" alt="Arca Animal">
+                    </div>
+                    <div class="ong-item">
+                        <img src="imagens/icones_ongs/icone_ong_lacos_e_patas.png" alt="Laços e Patas">
+                    </div>
+                    <div class="ong-item">
+                        <img src="imagens/icones_ongs/icone_ong_projeto_abraco.png" alt="Projeto Abraço">
+                    </div>
+                </div>
+            </div>
+            <button class="arrow right" onclick="nextSlide()">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10L25 20L15 30" stroke="#B8D961" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="info-wrapper">
+            <img src="imagens/imagens/gatinho.png" alt="Gatinho" class="cat-img">
+            <div class="green-box">
+                <p>O Projeto Pertencer caminha ao lado de ONGs e Projetos que fazem a diferença todos os dias, acolhendo, cuidando e transformando vidas. Juntos, formamos uma rede de amor e compromisso com os animais.</p>
+            </div>
+        </div>
+        <div class="wave-ongs-divider">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 Q72,10 144,50 T288,50 T432,50 T576,50 T720,50 T864,50 T1008,50 T1152,50 T1296,50 T1440,50 L1440,100 L0,100 Z" fill="#FF6B35"/>
+            </svg>
+        </div>
+    </section>
+
+
+    <section id="contato" class="contact-section">
+        <div class="contact-wrapper">
+            <div class="contact-left">
+                <h3>Não sabe onde realizar uma adoção responsável?</h3>
+                <p>Nós te mostramos o <span class="highlight-green">caminho!</span></p>
+            </div>
+
+            <div class="contact-right">
+                <h3>Onde estamos</h3>
+                <a href="https://instagram.com/pertencer_projeto" target="_blank">
+                    <img src="imagens/vetores/icone_instagram_verde.png" alt="Instagram">
+                    pertencer_projeto
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

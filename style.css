@@ -1,0 +1,490 @@
+/* Importar fonte Poppins */
+@font-face {
+    font-family: 'Poppins';
+    src: url('imagens/fontes/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('imagens/fontes/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('imagens/fontes/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('imagens/fontes/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Reset e Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;  /* MUDE AQUI - de Fredoka para Poppins */
+    overflow-x: hidden;
+}
+
+header {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 85px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu a {
+    color: #FF6B35;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.title-img-wrapper {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.title-img {
+    max-width: 900px;
+    height: auto;
+    display: inline-block;
+}
+
+
+.nav-menu a:hover {
+    color: #D45A2A;
+}
+.hero-section {
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-full-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text-overlay {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1100px;
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-text-overlay p {
+    color: #FFF;
+    font-size: 1.65rem;
+    line-height: 1.75;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.green-text {
+    color: #B8D961;
+    font-weight: 900;
+}
+
+.wave-text-section {
+    margin: 0;
+    padding: 0;
+}
+
+.wave-bottom-divider {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+.wave-bottom-divider svg {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.adoption-section {
+    background: #ffffff;
+    padding: 20px 0 0;
+    margin-top: -90px; 
+    position: relative;
+    overflow: visible;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.8rem;
+    color: #FF6B35;
+    text-transform: lowercase;
+    font-weight: 900;
+    margin-bottom: 65px;
+}
+
+.adoption-wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 200px;  
+}
+
+.orange-background-box {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 800px;
+    background: #FF6B35;
+    border-radius: 0 0 50% 50%;  
+    z-index: 1;
+}
+
+.girl-container {
+    position: relative;
+    width: 600px;
+    height: 550px;
+    margin: 0 auto 60px;
+    z-index: 10;
+}
+
+.girl-img {
+    width: 585px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.dec {
+    position: absolute;
+    width: 55px;
+    height: auto;
+    z-index: 3;
+    animation: twinkle 2.5s infinite ease-in-out;
+}
+
+.d1 { top: 34%; right: 23%; }
+.d2 { bottom: 1%; left: 11%; animation-delay: 0.8s; }
+
+@keyframes twinkle {
+    0%, 100% { rotate(0deg); }
+    50% { transform: scale(0.85) rotate(180deg); }
+}
+
+.adoption-text-box {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 50px 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.adoption-text-box p {
+    color: #FFF;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-bottom: 22px;
+}
+
+.adoption-text-box p:last-child {
+    margin-bottom: 0;
+}
+.partners-section {
+    background: transparent;  /* Sem fundo branco */
+    padding: 0;
+    position: relative;
+    z-index: 15;
+    margin-top: -180px;  /* Sobe para sobrepor a caixa laranja */
+}
+
+.partners-section .title-img-wrapper {
+    text-align: center;
+    margin-bottom: 20px;  /* Reduzido de 50px para 20px */
+    position: relative;
+    z-index: 20;
+}
+
+.partners-section .title-img {
+    max-width: 800px;
+    position: relative;
+    z-index: 20;
+}
+.arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s;
+    z-index: 30;  /* ADICIONE ISSO - setas na frente */
+    position: relative;  /* Necessário para z-index funcionar */
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
+.arrow svg {
+    display: block;
+    pointer-events: auto;  /* Garante que seja clicável */
+}
+
+.ongs-container {
+    overflow: visible;
+    width: 600px;
+    padding-bottom: 50px;
+    z-index: 20;  /* ONGs abaixo das setas */
+    position: relative;
+}
+
+.ong-item {
+    flex-shrink: 0;
+    width: 145px;
+    height: 145px;
+    background: #E8F5E9;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.09);
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s;
+    opacity: 0.6;
+    z-index: 10;  /* ONGs com z-index menor */
+}
+
+.carousel {
+    max-width: 950px;
+    margin: 0 auto 70px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    position: relative;
+    z-index: 20;
+    overflow: visible;  /* Garante que não corta */
+}
+
+.ongs-list {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.5s ease;
+    align-items: center;
+    padding-bottom: 60px;  /* Espaço para o nome "projeto abrigo" */
+}
+
+/* ONG do meio - MAIOR e destacada */
+.ong-item.center {
+    width: 180px;
+    height: 180px;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.ong-item:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.ong-item img {
+    max-width: 90%;
+    max-height: 75%;
+    object-fit: contain;
+}
+
+.ong-name {
+    position: absolute;
+    bottom: -35px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.info-wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: -150px;  /* Aumentado para aproximar mais */
+    padding-bottom: 40px;  /* Reduzido de 60px */
+    display: flex;
+    align-items: center;
+    gap: 0;
+    position: relative;
+}
+
+.cat-img {
+    width: 350px;
+    height: auto;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+}
+.cat-img, .girl-img {
+    transition: transform 0.3s ease-out;
+}
+
+.green-box {
+    flex: 1;
+    background: #8BC34A;
+    border-radius: 0 32px 32px 0;
+    padding: 42px 55px 42px 160px;  /* Aumentado de 80px para 120px */
+    margin-left: -150px;
+    position: relative;
+    z-index: 5;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.green-box p {
+    color: #FFF;
+    font-size: 1.08rem;
+    line-height: 1.8;
+}
+
+.wave-ongs-divider {
+    width: 100%;
+    height: 100px;
+}
+
+.wave-ongs-divider svg {
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+.contact-section {
+    background: #FF6B35;
+    padding: 52px 60px;
+}
+
+.contact-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-right h3 {
+    color: #FFF;
+    font-size: 1.65rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+.contact-left h3 {
+    color: #FFF;
+    font-size: 1.88rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.contact-left p {
+    color: #FFF;
+    font-size: 1.48rem;
+}
+
+.highlight-green {
+    color: #B8D961;
+    font-weight: 900;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-green::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 6'%3E%3Cpath d='M0 3 Q 6 0, 12 3 T 24 3 T 36 3 T 48 3 T 60 3 T 72 3 T 84 3 T 96 3 T 108 3 T 120 3' stroke='%23B8D961' stroke-width='4' fill='none'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-size: 30px 10px;
+}
+
+
+.contact-right a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.18rem;
+}
+
+.contact-right img {
+    width: 32px;
+}
+
+@media (max-width: 1024px) {
+    .info-wrapper, .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat-img { margin-bottom: 20px; }
+}
+
+@media (max-width: 768px) {
+    .girl-container { width: 400px; height: 400px; }
+    .circle-green { width: 350px; height: 350px; }
+    .girl-img { width: 760px; }
+    .title { font-size: 2.8rem; }
+    .ongs-list { flex-wrap: wrap; gap: 35px; }
+}
