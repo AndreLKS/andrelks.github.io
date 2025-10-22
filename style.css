@@ -488,3 +488,267 @@ header {
     .title { font-size: 2.8rem; }
     .ongs-list { flex-wrap: wrap; gap: 35px; }
 }
+
+/* ===== RESPONSIVIDADE MOBILE ===== */
+
+/* Tablets e telas menores que 1024px */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 30px;
+    }
+    
+    .nav-menu {
+        gap: 25px;
+        font-size: 0.95rem;
+    }
+    
+    .girl-container {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .girl-img {
+        width: 400px;
+    }
+    
+    .title-img {
+        max-width: 500px;
+    }
+    
+    .info-wrapper {
+        flex-direction: column;
+        margin-top: -80px;
+    }
+    
+    .cat-img {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .green-box {
+        margin-left: 0;
+        border-radius: 32px;
+        padding: 35px 40px;
+    }
+}
+
+/* Mobile - telas menores que 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    /* Header */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 0.85rem;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        height: auto;
+        min-height: 60vh;
+    }
+    
+    .hero-full-img {
+        height: auto;
+    }
+    
+    .hero-text-overlay {
+        bottom: 10%;
+        width: 90%;
+    }
+    
+    .hero-text-overlay p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    /* Seção Adoção */
+    .adoption-section {
+        padding: 40px 0 0;
+    }
+    
+    .title-img {
+        max-width: 90%;
+    }
+    
+    .girl-container {
+        width: 280px;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .girl-img {
+        width: 260px;
+    }
+    
+    .dec {
+        width: 35px;
+    }
+    
+    .adoption-wrapper {
+        padding-bottom: 100px;
+    }
+    
+    .orange-background-box {
+        top: 250px;
+        height: 550px;
+        border-radius: 0 0 40% 40%;
+    }
+    
+    .adoption-text-box {
+        padding: 0 25px;
+    }
+    
+    .adoption-text-box p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    /* Seção ONGs */
+    .partners-section {
+        padding: 0 20px;
+        margin-top: -200px;
+    }
+    
+    .carousel {
+        gap: 20px;
+        margin-top: 15px;
+    }
+    
+    .arrow {
+        padding: 5px;
+    }
+    
+    .arrow svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .ongs-container {
+        width: 250px;
+    }
+    
+    .ong-item {
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+    
+    .ong-item.center {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .ong-item img {
+        max-width: 85%;
+    }
+    
+    /* Atualizar cálculo do carrossel para mobile */
+    .ongs-list {
+        gap: 25px;
+        padding-bottom: 50px;
+    }
+    
+    /* Info wrapper */
+    .info-wrapper {
+        margin-top: -60px;
+        padding-bottom: 30px;
+    }
+    
+    .cat-img {
+        width: 200px;
+    }
+    
+    .green-box {
+        padding: 30px 25px;
+        min-height: auto;
+    }
+    
+    .green-box p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    /* Contato */
+    .contact-section {
+        padding: 35px 20px;
+    }
+    
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .contact-left h3,
+    .contact-right h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-left p,
+    .contact-right a {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile pequeno - telas menores que 480px */
+@media (max-width: 480px) {
+    .nav-menu {
+        font-size: 0.75rem;
+        gap: 10px;
+    }
+    
+    .hero-text-overlay p {
+        font-size: 0.75rem;
+    }
+    
+    .title-img {
+        max-width: 95%;
+    }
+    
+    .girl-container {
+        width: 220px;
+        height: 250px;
+    }
+    
+    .girl-img {
+        width: 200px;
+    }
+    
+    .orange-background-box {
+        top: 200px;
+        height: 500px;
+    }
+    
+    .ongs-container {
+        width: 180px;
+    }
+    
+    .ong-item {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .ong-item.center {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .cat-img {
+        width: 150px;
+    }
+}

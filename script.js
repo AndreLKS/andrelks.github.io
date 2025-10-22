@@ -4,14 +4,16 @@ const ongItems = document.querySelectorAll('.ong-item');
 const totalItems = ongItems.length;
 
 function updateCarousel() {
-    // Remove classe center de todos
     ongItems.forEach(item => item.classList.remove('center'));
-    
-    // Adiciona classe center ao item atual
     ongItems[currentIndex].classList.add('center');
     
-    // Calcula o deslocamento para centralizar
-    const offset = -(currentIndex * (145 + 40)) + 210;
+    // Detectar tamanho da tela para ajustar offset
+    const isMobile = window.innerWidth <= 768;
+    const itemWidth = isMobile ? 100 : 145;
+    const gap = isMobile ? 25 : 40;
+    const centerOffset = isMobile ? 125 : 210;
+    
+    const offset = -(currentIndex * (itemWidth + gap)) + centerOffset;
     ongsList.style.transform = `translateX(${offset}px)`;
 }
 
