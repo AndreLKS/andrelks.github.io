@@ -125,7 +125,7 @@ header {
 
 .hero-text-overlay {
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -191,12 +191,12 @@ header {
 
 .orange-background-box {
     position: absolute;
-    top: 450px;
+    top: 380px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     max-width: 100%;
-    height: 800px;
+    height: 900px;
     background: #FF6B35;
     border-radius: 0 0 50% 50%;
     z-index: 1;
@@ -239,7 +239,7 @@ header {
     position: relative;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px 50px 0;
+    padding: 10px 50px 0;
     text-align: center;
     z-index: 5;
 }
@@ -437,18 +437,26 @@ header {
     width: 100%;
     height: 100px;
     overflow: hidden;
+    line-height: 0;  /* Remove espaçamento de linha */
+    margin: 0;
+    padding: 0;
 }
 
 .wave-ongs-divider svg {
     width: 100%;
     height: 100px;
     display: block;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
 }
 
 .contact-section {
     background: #FF6B35;
     padding: 52px 60px;
     width: 100%;
+    margin: 0;  /* Garantir que não há margem */
+    margin-top: -1px;  /* Sobrepor 1px para garantir que não há gap */
 }
 
 .contact-wrapper {
@@ -515,7 +523,7 @@ header {
 /* ===== RESPONSIVIDADE TABLET GRANDE ===== */
 @media (max-width: 1024px) {
     .hero-text-overlay {
-        bottom: 12%;
+        bottom: 18%;
     }
     
     .hero-text-overlay p {
@@ -639,7 +647,7 @@ header {
     }
     
     .orange-background-box {
-        top: 300px;
+        top: 270px;
         left: 0;
         transform: none;
         width: 100%;
@@ -758,17 +766,20 @@ header {
     .wave-ongs-divider {
         height: 70px;
         width: 100%;
+        line-height: 0;
     }
     
     .wave-ongs-divider svg {
         height: 70px;
         width: 100%;
+        vertical-align: bottom;
     }
     
     /* Contato/Footer */
     .contact-section {
         padding: 35px 20px;
         width: 100%;
+        margin-top: -1px;
     }
     
     .contact-wrapper {
@@ -813,7 +824,7 @@ header {
     }
     
     .orange-background-box {
-        top: 260px;
+        top: 240px;
         min-height: 480px;
     }
 }
@@ -847,7 +858,7 @@ header {
     }
     
     .orange-background-box {
-        top: 240px;
+        top: 220px;
         min-height: 450px;
     }
     
