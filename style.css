@@ -532,6 +532,10 @@ header {
         line-height: 1.6;
     }
     
+    .orange-background-box {
+        top: 380px;
+    }
+    
     .info-wrapper {
         flex-direction: column;
         align-items: center;
@@ -598,13 +602,13 @@ header {
     }
     
     .hero-text-overlay {
-        bottom: 25%;
+        bottom: 30%;
         width: 90%;
         padding: 0 10px;
     }
     
     .hero-text-overlay p {
-        font-size: 1rem;
+        font-size: 0.95rem;
         line-height: 1.5;
     }
     
@@ -633,9 +637,9 @@ header {
     
     .girl-container {
         width: 90%;
-        max-width: 300px;
+        max-width: 280px;
         height: auto;
-        margin: 0 auto 30px;
+        margin: 0 auto 20px;
     }
     
     .girl-img {
@@ -648,24 +652,24 @@ header {
     }
     
     .orange-background-box {
-        top: 270px;
+        top: 250px;
         left: 0;
         transform: none;
         width: 100%;
         height: auto;
-        min-height: 520px;
+        min-height: 550px;
         border-radius: 0 0 30% 30%;
     }
     
     .adoption-text-box {
-        padding: 0 25px 40px;
+        padding: 5px 20px 40px;
         width: 100%;
     }
     
     .adoption-text-box p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 18px;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        margin-bottom: 16px;
     }
     
     /* Seção ONGs */
@@ -678,7 +682,7 @@ header {
     
     .partners-section .title-img-wrapper {
         margin-bottom: 20px;
-        margin-top: 40px;
+        margin-top: 50px;
         padding: 0 10px;
         z-index: 20;
     }
@@ -819,10 +823,10 @@ header {
     }
 }
 
-/* ===== MOBILE PEQUENO ===== */
-@media (max-width: 480px) {
+/* ===== MOBILE PEQUENO (iPhone 15, etc - 390-430px) ===== */
+@media (max-width: 430px) {
     .hero-text-overlay {
-        bottom: 22%;
+        bottom: 28%;
     }
     
     .hero-text-overlay p {
@@ -830,14 +834,32 @@ header {
         line-height: 1.45;
     }
     
+    .girl-container {
+        max-width: 260px;
+        margin-bottom: 15px;
+    }
+    
     .orange-background-box {
-        top: 240px;
-        min-height: 480px;
+        top: 230px;
+        min-height: 500px;
+    }
+    
+    .adoption-text-box {
+        padding: 5px 18px 35px;
+    }
+    
+    .adoption-text-box p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .partners-section .title-img-wrapper {
+        margin-top: 45px;
     }
 }
 
-/* ===== MOBILE MUITO PEQUENO ===== */
-@media (max-width: 400px) {
+/* ===== MOBILE MUITO PEQUENO (320-375px) ===== */
+@media (max-width: 375px) {
     .navbar {
         padding: 8px 10px;
     }
@@ -852,29 +874,36 @@ header {
     }
     
     .hero-text-overlay {
-        bottom: 20%;
+        bottom: 26%;
     }
     
     .hero-text-overlay p {
-        font-size: 0.75rem;
+        font-size: 0.78rem;
         line-height: 1.4;
     }
     
     .girl-container {
-        max-width: 250px;
+        max-width: 240px;
+        margin-bottom: 12px;
     }
     
     .orange-background-box {
-        top: 220px;
-        min-height: 450px;
+        top: 210px;
+        min-height: 480px;
     }
     
     .adoption-text-box {
-        padding: 0 20px 35px;
+        padding: 5px 15px 30px;
     }
     
     .adoption-text-box p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        line-height: 1.45;
+        margin-bottom: 14px;
+    }
+    
+    .partners-section .title-img-wrapper {
+        margin-top: 40px;
     }
     
     .ongs-container {
