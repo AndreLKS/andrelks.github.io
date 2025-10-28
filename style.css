@@ -125,7 +125,7 @@ header {
 
 .hero-text-overlay {
     position: absolute;
-    bottom: 25%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -185,21 +185,17 @@ header {
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
-    padding-bottom: 200px;
+    padding-bottom: 0;
     width: 100%;
 }
 
-/* CORREÇÃO PRINCIPAL - Trocar 100vw por 100% */
 .orange-background-box {
-    position: absolute;
-    top: 450px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
-    max-width: 100vw;
-    height: 800px;
     background: #FF6B35;
     border-radius: 0 0 50% 50%;
+    padding: 80px 20px 120px;
+    margin-top: -60px;
+    position: relative;
     z-index: 1;
 }
 
@@ -207,8 +203,7 @@ header {
     position: relative;
     width: 600px;
     max-width: 90%;
-    height: 550px;
-    margin: 0 auto 60px;
+    margin: 0 auto;
     z-index: 10;
 }
 
@@ -240,7 +235,7 @@ header {
     position: relative;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 50px 0;
+    padding: 30px 50px 0;
     text-align: center;
     z-index: 5;
 }
@@ -261,16 +256,15 @@ header {
     padding: 0;
     position: relative;
     z-index: 15;
-    margin-top: -180px;
+    margin-top: -80px;
     width: 100%;
     overflow: visible;
 }
 
-/* AJUSTE - Adicionar espaço acima do título */
 .partners-section .title-img-wrapper {
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 100px;
     position: relative;
     z-index: 20;
 }
@@ -329,7 +323,6 @@ header {
     z-index: 10;
 }
 
-/* AJUSTE - Links dentro dos círculos com padding reduzido */
 .ong-item a {
     display: flex;
     align-items: center;
@@ -373,7 +366,6 @@ header {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* AJUSTE PRINCIPAL - Imagens preenchem 95% do círculo */
 .ong-item img {
     max-width: 95%;
     max-height: 95%;
@@ -516,8 +508,30 @@ header {
     width: 32px;
 }
 
-/* ===== RESPONSIVIDADE TABLET ===== */
+/* ===== RESPONSIVIDADE TABLET GRANDE ===== */
 @media (max-width: 1024px) {
+    .hero-text-overlay {
+        bottom: 12%;
+    }
+    
+    .hero-text-overlay p {
+        font-size: 1.4rem;
+        line-height: 1.65;
+    }
+    
+    .orange-background-box {
+        padding: 60px 20px 100px;
+        margin-top: -50px;
+    }
+    
+    .adoption-text-box {
+        padding: 25px 40px 0;
+    }
+    
+    .partners-section {
+        margin-top: -70px;
+    }
+    
     .info-wrapper {
         flex-direction: column;
         align-items: center;
@@ -543,7 +557,7 @@ header {
     }
 }
 
-/* ===== RESPONSIVIDADE MOBILE ===== */
+/* ===== RESPONSIVIDADE TABLET ===== */
 @media (max-width: 768px) {
     html, body {
         overflow-x: hidden;
@@ -584,14 +598,14 @@ header {
     }
     
     .hero-text-overlay {
-        bottom: 10%;
+        bottom: 8%;
         width: 90%;
         padding: 0 10px;
     }
     
     .hero-text-overlay p {
-        font-size: 0.9rem;
-        line-height: 1.5;
+        font-size: 1.1rem;
+        line-height: 1.6;
     }
     
     /* Seção Adoção */
@@ -611,7 +625,7 @@ header {
     }
     
     .adoption-wrapper {
-        padding-bottom: 100px;
+        padding-bottom: 0;
         padding-left: 15px;
         padding-right: 15px;
         width: 100%;
@@ -619,9 +633,8 @@ header {
     
     .girl-container {
         width: 90%;
-        max-width: 300px;
-        height: auto;
-        margin: 0 auto 30px;
+        max-width: 280px;
+        margin: 0 auto;
     }
     
     .girl-img {
@@ -633,19 +646,14 @@ header {
         width: 35px;
     }
     
-    /* CORREÇÃO CRÍTICA - Caixa laranja mobile */
     .orange-background-box {
-        top: 280px;
-        left: 0;
-        transform: none;
-        width: 100%;
-        height: auto;
-        min-height: 500px;
+        padding: 40px 15px 80px;
+        margin-top: -30px;
         border-radius: 0 0 30% 30%;
     }
     
     .adoption-text-box {
-        padding: 20px 25px 40px;
+        padding: 20px 20px 0;
         width: 100%;
     }
     
@@ -658,14 +666,13 @@ header {
     /* Seção ONGs */
     .partners-section {
         padding: 0 15px;
-        margin-top: -80px;
+        margin-top: -60px;
         width: 100%;
     }
     
-    /* AJUSTE - Espaço acima do título no mobile */
     .partners-section .title-img-wrapper {
         margin-bottom: 20px;
-        margin-top: 40px;
+        margin-top: 60px;
         padding: 0 10px;
     }
     
@@ -712,7 +719,6 @@ header {
         height: 120px;
     }
     
-    /* AJUSTE - Imagens no mobile */
     .ong-item img {
         max-width: 92%;
         max-height: 92%;
@@ -799,7 +805,19 @@ header {
     }
 }
 
-/* Mobile MUITO pequeno */
+/* ===== MOBILE PEQUENO ===== */
+@media (max-width: 480px) {
+    .hero-text-overlay {
+        bottom: 5%;
+    }
+    
+    .hero-text-overlay p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* ===== MOBILE MUITO PEQUENO ===== */
 @media (max-width: 400px) {
     .navbar {
         padding: 8px 10px;
@@ -814,21 +832,26 @@ header {
         font-size: 0.75rem;
     }
     
+    .hero-text-overlay {
+        bottom: 3%;
+    }
+    
     .hero-text-overlay p {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
     
     .girl-container {
-        max-width: 250px;
+        max-width: 240px;
     }
     
     .orange-background-box {
-        top: 240px;
-        min-height: 450px;
+        padding: 30px 15px 60px;
+        margin-top: -20px;
     }
     
     .adoption-text-box {
-        padding: 15px 20px 35px;
+        padding: 15px 15px 0;
     }
     
     .adoption-text-box p {
