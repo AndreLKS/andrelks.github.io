@@ -829,6 +829,61 @@ header {
     }
 }
 
+/* Desktop - aumentar mais ainda */
+.hero-text-overlay {
+    position: absolute;
+    bottom: 25%;  /* Aumentado de 20% para 25% */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 1100px;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Tablet grande (1024px) */
+@media (max-width: 1024px) {
+    .hero-text-overlay {
+        bottom: 22%;  /* Aumentado de 18% para 22% */
+    }
+}
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+    .hero-text-overlay {
+        bottom: 20%;  /* Aumentado de 15% para 20% */
+        width: 90%;
+        padding: 0 10px;
+    }
+}
+
+/* Mobile pequeno (480px) - incluindo iPhone 15 */
+@media (max-width: 480px) {
+    .hero-text-overlay {
+        bottom: 18%;  /* Aumentado de 12% para 18% */
+    }
+}
+
+/* Breakpoint específico para iPhone 15 e similares (390-400px de largura) */
+@media (max-width: 430px) and (min-width: 390px) {
+    .hero-text-overlay {
+        bottom: 20%;  /* Valor específico para iPhone 15 */
+    }
+    
+    .hero-text-overlay p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* Mobile muito pequeno (400px) */
+@media (max-width: 400px) {
+    .hero-text-overlay {
+        bottom: 15%;  /* Aumentado de 10% para 15% */
+    }
+}
+
+
 /* ===== MOBILE MUITO PEQUENO ===== */
 @media (max-width: 400px) {
     .navbar {
