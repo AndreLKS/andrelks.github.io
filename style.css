@@ -874,7 +874,7 @@ header {
     }
     
     .hero-text-overlay {
-        bottom: 41%;
+        bottom: 25%;
     }
     
     .hero-text-overlay p {
@@ -884,7 +884,7 @@ header {
     
     .girl-container {
         max-width: 240px;
-        margin-bottom: 12px;
+        margin-bottom: 2px;
     }
     
     .orange-background-box {
