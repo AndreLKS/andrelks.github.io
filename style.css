@@ -624,7 +624,7 @@ header {
 
 /* ===== MOBILE PEQUENO (iPhone 15, etc - 390-430px) ===== */
 @media (max-width: 400px) {
-    .hero-text-overlay { bottom: 39%; }
+    .hero-text-overlay { bottom: 38%; }
     .hero-text-overlay p { font-size: 0.68rem; line-height: 1; }
     .girl-container { max-width: 290px; margin-bottom: 5px; }
     .orange-background-box { top: 270px; min-height: 500px; }
