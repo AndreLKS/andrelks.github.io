@@ -604,7 +604,7 @@ header {
     .logo img { height: 40px; }
     .nav-menu { gap: 10px; font-size: 0.75rem; }
 
-    .hero-text-overlay { bottom: 25%; }
+    .hero-text-overlay { bottom: 32%; }
     .hero-text-overlay p { font-size: 0.46rem; line-height: 1.4; } /* corrigido ponto decimal */
 
     .girl-container { max-width: 240px; margin-bottom: 2px; }
