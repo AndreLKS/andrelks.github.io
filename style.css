@@ -549,7 +549,7 @@ header {
     .partners-section { padding: 0 15px; margin-top: -80px; width: 100%; z-index: 15; }
     .partners-section .title-img-wrapper { margin-bottom: 20px; margin-top: 50px; padding: 0 10px; z-index: 20; }
     .partners-section .title-img { width: 100%; max-width: 100%; z-index: 20; }
-    .carousel { gap: 20px; margin-top: 20px; margin-bottom: 50px; padding: 0 10px; width: 100%; z-index: 20; }
+    .carousel { gap: 21px; margin-top: -1px; margin-bottom: 5px; padding: 0 10px; width: 100%; z-index: 20; }
     .arrow { padding: 8px; }
     .arrow svg { width: 32px; height: 32px; }
     .ongs-container { width: 220px; max-width: 60%; padding-bottom: 40px; z-index: 20; }
@@ -574,7 +574,7 @@ header {
     .green-box p { font-size: 0.95rem; line-height: 1.6; }
 
     /* Ondas */
-    .wave-ongs-divider { height: 70px; width: 100%; line-height: 0; }
+    .wave-ongs-divider { height: 70px; width: 130%; line-height: 0; }
     .wave-ongs-divider svg { height: 70px; width: 100%; vertical-align: bottom; }
 
     /* Contato/Footer */
@@ -589,15 +589,38 @@ header {
 
 /* ===== MOBILE PEQUENO (iPhone 15, etc - 390-430px) ===== */
 @media (max-width: 430px) {
-    .hero-text-overlay { bottom: 28%; }
-    .hero-text-overlay p { font-size: 0.85rem; line-height: 1.45; }
-    .girl-container { max-width: 260px; margin-bottom: 15px; }
-    .orange-background-box { top: 230px; min-height: 500px; }
-    .adoption-text-box { padding: 5px 18px 35px; }
-    .adoption-text-box p { font-size: 0.85rem; line-height: 1.5; }
-    .partners-section .title-img-wrapper { margin-top: 45px; }
+    .hero-text-overlay { bottom: 40%; }
+    .hero-text-overlay p { font-size: 0.72rem; line-height: 1; }
+    .girl-container { max-width: 290px; margin-bottom: 15px; }
+    .orange-background-box { top: 260px; min-height: 500px; }
+    .adoption-text-box { padding: 1px 1px px; }
+    .adoption-text-box p { font-size: 0.65rem; line-height: 1.5; }
+    .partners-section .title-img-wrapper { margin-top: -3px; }
+    .cat-img { width: 160px; margin-bottom: -25px; max-width: 45%; }
+    
+    .contact-left h3, .contact-right h3 { font-size: 1.1rem; }
+    .contact-left p { font-size: 0.95rem; }
+     /* ADICIONE ISTO */
+    .wave-ongs-divider {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        margin-bottom: -1px;
+        height: 70px;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .wave-ongs-divider svg {
+        width: 100%;
+        height: 70px;
+        display: block;
+        vertical-align: bottom;
+    }
 }
-
 /* ===== MOBILE MUITO PEQUENO (320-375px) ===== */
 @media (max-width: 375px) {
     .navbar { padding: 8px 10px; }
