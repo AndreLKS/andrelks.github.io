@@ -874,12 +874,12 @@ header {
     }
     
     .hero-text-overlay {
-        bottom: 26%;
+        bottom: 41%;
     }
     
     .hero-text-overlay p {
-        font-size: 0.78rem;
-        line-height: 1.4;
+        font-size: 0.45rem;
+        line-height: 0,4;
     }
     
     .girl-container {
@@ -898,7 +898,7 @@ header {
     
     .adoption-text-box p {
         font-size: 0.8rem;
-        line-height: 1.45;
+        line-height: 0.95;
         margin-bottom: 14px;
     }
     
@@ -923,6 +923,7 @@ header {
     
     .cat-img {
         width: 160px;
+        margin-bottom:-25px;
         max-width: 45%;
     }
     
