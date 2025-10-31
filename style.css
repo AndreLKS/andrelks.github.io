@@ -525,7 +525,7 @@ header {
     .hero-text-overlay p { font-size: 0.95rem; line-height: 1.5; }
 
     /* Adoção */
-    .adoption-section { padding: 30px 15px 0; margin-top: -50px; width: 100%; }
+    .adoption-section { padding: 20px 15px 0; margin-top: 0px; width: 100%; }
     .title-img-wrapper { margin-bottom: 30px; padding: 0 10px; }
     .title-img { max-width: 100%; }
     .adoption-wrapper { padding-bottom: 100px; padding-left: 15px; padding-right: 15px; width: 100%; }
@@ -589,10 +589,10 @@ header {
 
 /* ===== MOBILE PEQUENO (iPhone 15, etc - 390-430px) ===== */
 @media (max-width: 430px) {
-    .hero-text-overlay { bottom: 40%; }
-    .hero-text-overlay p { font-size: 0.72rem; line-height: 1; }
-    .girl-container { max-width: 290px; margin-bottom: 15px; }
-    .orange-background-box { top: 260px; min-height: 500px; }
+    .hero-text-overlay { bottom: 23%; }
+    .hero-text-overlay p { font-size: 0.68rem; line-height: 1; }
+    .girl-container { max-width: 290px; margin-bottom: 5px; }
+    .orange-background-box { top: 270px; min-height: 500px; }
     .adoption-text-box { padding: 1px 1px px; }
     .adoption-text-box p { font-size: 0.65rem; line-height: 1.5; }
     .partners-section .title-img-wrapper { margin-top: -3px; }
@@ -621,6 +621,7 @@ header {
         vertical-align: bottom;
     }
 }
+
 /* ===== MOBILE MUITO PEQUENO (320-375px) ===== */
 @media (max-width: 375px) {
     .navbar { padding: 8px 10px; }
