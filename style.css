@@ -622,6 +622,41 @@ header {
     }
 }
 
+/* ===== MOBILE PEQUENO (iPhone 15, etc - 390-430px) ===== */
+@media (max-width: 400px) {
+    .hero-text-overlay { bottom: 22%; }
+    .hero-text-overlay p { font-size: 0.68rem; line-height: 1; }
+    .girl-container { max-width: 290px; margin-bottom: 5px; }
+    .orange-background-box { top: 270px; min-height: 500px; }
+    .adoption-text-box { padding: 1px 1px px; }
+    .adoption-text-box p { font-size: 0.65rem; line-height: 1.5; }
+    .partners-section .title-img-wrapper { margin-top: -3px; }
+    .cat-img { width: 160px; margin-bottom: -25px; max-width: 45%; }
+    
+    .contact-left h3, .contact-right h3 { font-size: 1.1rem; }
+    .contact-left p { font-size: 0.95rem; }
+     /* ADICIONE ISTO */
+    .wave-ongs-divider {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        margin-bottom: -1px;
+        height: 70px;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .wave-ongs-divider svg {
+        width: 100%;
+        height: 70px;
+        display: block;
+        vertical-align: bottom;
+    }
+}
+
 /* ===== MOBILE MUITO PEQUENO (320-375px) ===== */
 @media (max-width: 375px) {
     .navbar { padding: 8px 10px; }
